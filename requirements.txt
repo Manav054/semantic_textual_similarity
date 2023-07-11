@@ -1,2 +1,3 @@
 spacy
 streamlit
+en_core_web_lg
