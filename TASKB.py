@@ -19,13 +19,13 @@ def main() :
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html = True)
-    text1 = st.text_input("Text1", "Type Here")
-    text2 = st.text_input("Text2", "Type Here")
+    text1 = st.text_input("Text1")
+    text2 = st.text_input("Text2")
     similarity = ""
     
     if st.button("Calculate similarity") :
         similarity = calculate_similarity(text1, text2)
     st.success("Similarity is {}".format(similarity))
 
-if "__name__" == "__main__" :
+if __name__ == "__main__" :
     main()
